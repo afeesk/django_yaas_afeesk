@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% for post in auctions %}
+    <h2>{{ post.title }}</h2> <a href="{% url 'edit_auction' post.id %}">Edit auction</a>
+    <p>{{ post.id }}</p>
+    <p>{{ post.timestamp }}</p>
+    <p>{{ post.description }}</p>
+    <p>{{ post.minimum_price }}</p>
+{% empty %}
+    <p>No auction Posts<p>
+{%  endfor %}
+{% endblock %}

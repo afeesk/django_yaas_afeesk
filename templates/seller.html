@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for items in auction %}
+{% if not items.banned and not items.due %}
+
+<h1>Searched for : {{ items}} {{ items.description }} <a href='{% url "single_auction" items.slug %}' class="btn btn-default" role="button">Modify Decsription</a> </h1>
+{% endif %}
+{% endfor %}
+{% endblock %}

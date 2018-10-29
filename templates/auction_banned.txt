@@ -1,0 +1,5 @@
+Hello {{ user }},
+
+The auction "{{ title }}" has been banned for violating the site guidelines. We regret to inform you of this.
+
+Thank you

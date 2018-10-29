@@ -1,0 +1,333 @@
+[
+{
+    "model": "auctionApp.auction",
+    "pk": 11,
+    "fields": {
+        "seller": 30,
+        "title": "ball",
+        "description": "coolour: yellow\r\nsize: 21\"\r\ncondition: new",
+        "minimum_price": "2.99",
+        "d_version": 0,
+        "bid_version": 2,
+        "previous_bid": "4.01",
+        "bid_price": "4.01",
+        "timestamp": "2018-10-28T07:57:14.648Z",
+        "deadline": "2018-10-31T07:56:46Z",
+        "active": true,
+        "banned": false,
+        "due": false,
+        "adjucated": false,
+        "slug": "ball",
+        "current_winning_bidder": "naus"
+    }
+},
+{
+    "model": "auctionApp.auction",
+    "pk": 12,
+    "fields": {
+        "seller": 30,
+        "title": "ipad",
+        "description": "new apple ipad",
+        "minimum_price": "70.00",
+        "d_version": 0,
+        "bid_version": 2,
+        "previous_bid": "72.01",
+        "bid_price": "72.01",
+        "timestamp": "2018-10-28T07:58:35.904Z",
+        "deadline": "2018-10-31T07:58:19Z",
+        "active": true,
+        "banned": false,
+        "due": false,
+        "adjucated": false,
+        "slug": "ipad",
+        "current_winning_bidder": "naus"
+    }
+},
+{
+    "model": "auctionApp.auction",
+    "pk": 13,
+    "fields": {
+        "seller": 31,
+        "title": "samsung galaxy tab",
+        "description": "new 10.1\" galaxy tab 4",
+        "minimum_price": "65.99",
+        "d_version": 0,
+        "bid_version": 1,
+        "previous_bid": "70.01",
+        "bid_price": "70.01",
+        "timestamp": "2018-10-28T08:01:18.348Z",
+        "deadline": "2018-10-31T08:01:40Z",
+        "active": true,
+        "banned": false,
+        "due": false,
+        "adjucated": false,
+        "slug": "samsung-galaxy-tab",
+        "current_winning_bidder": "naus"
+    }
+},
+{
+    "model": "auctionApp.auction",
+    "pk": 14,
+    "fields": {
+        "seller": 31,
+        "title": "acer laptop 13\"",
+        "description": "new laptop with 8GB ram, 500HHD",
+        "minimum_price": "99.99",
+        "d_version": 0,
+        "bid_version": 1,
+        "previous_bid": "100.01",
+        "bid_price": "100.01",
+        "timestamp": "2018-10-28T08:03:06.371Z",
+        "deadline": "2018-10-31T08:03:00Z",
+        "active": true,
+        "banned": false,
+        "due": false,
+        "adjucated": false,
+        "slug": "acer-laptop-13",
+        "current_winning_bidder": "naus"
+    }
+},
+{
+    "model": "auctionApp.auction",
+    "pk": 15,
+    "fields": {
+        "seller": 32,
+        "title": "rice",
+        "description": "10kg",
+        "minimum_price": "3.99",
+        "d_version": 0,
+        "bid_version": 1,
+        "previous_bid": "4.01",
+        "bid_price": "4.01",
+        "timestamp": "2018-10-28T08:08:07.822Z",
+        "deadline": "2018-10-31T08:07:49Z",
+        "active": true,
+        "banned": false,
+        "due": false,
+        "adjucated": false,
+        "slug": "rice",
+        "current_winning_bidder": "boss"
+    }
+},
+{
+    "model": "auctionApp.auction",
+    "pk": 16,
+    "fields": {
+        "seller": 33,
+        "title": "beans",
+        "description": "100kg",
+        "minimum_price": "15.99",
+        "d_version": 0,
+        "bid_version": 1,
+        "previous_bid": "16.01",
+        "bid_price": "16.01",
+        "timestamp": "2018-10-28T08:10:41.405Z",
+        "deadline": "2018-10-31T08:10:28Z",
+        "active": true,
+        "banned": false,
+        "due": false,
+        "adjucated": false,
+        "slug": "beans",
+        "current_winning_bidder": "boss"
+    }
+},
+{
+    "model": "auctionApp.auction",
+    "pk": 17,
+    "fields": {
+        "seller": 34,
+        "title": "break",
+        "description": "2 pieces",
+        "minimum_price": "1.29",
+        "d_version": 1,
+        "bid_version": 0,
+        "previous_bid": "1.29",
+        "bid_price": "0.01",
+        "timestamp": "2018-10-28T08:57:47.702Z",
+        "deadline": "2018-10-31T08:57:07Z",
+        "active": true,
+        "banned": false,
+        "due": false,
+        "adjucated": false,
+        "slug": "break",
+        "current_winning_bidder": null
+    }
+},
+{
+    "model": "auctionApp.bid",
+    "pk": 16,
+    "fields": {
+        "auction": 11,
+        "user": 32,
+        "bid_amount": "3.01"
+    }
+},
+{
+    "model": "auctionApp.bid",
+    "pk": 17,
+    "fields": {
+        "auction": 14,
+        "user": 32,
+        "bid_amount": "100.01"
+    }
+},
+{
+    "model": "auctionApp.bid",
+    "pk": 18,
+    "fields": {
+        "auction": 12,
+        "user": 32,
+        "bid_amount": "71.01"
+    }
+},
+{
+    "model": "auctionApp.bid",
+    "pk": 19,
+    "fields": {
+        "auction": 12,
+        "user": 32,
+        "bid_amount": "72.01"
+    }
+},
+{
+    "model": "auctionApp.bid",
+    "pk": 20,
+    "fields": {
+        "auction": 11,
+        "user": 32,
+        "bid_amount": "4.01"
+    }
+},
+{
+    "model": "auctionApp.bid",
+    "pk": 21,
+    "fields": {
+        "auction": 13,
+        "user": 32,
+        "bid_amount": "70.01"
+    }
+},
+{
+    "model": "auctionApp.bid",
+    "pk": 22,
+    "fields": {
+        "auction": 15,
+        "user": 31,
+        "bid_amount": "4.01"
+    }
+},
+{
+    "model": "auctionApp.bid",
+    "pk": 23,
+    "fields": {
+        "auction": 16,
+        "user": 31,
+        "bid_amount": "16.01"
+    }
+},
+{
+    "model": "auctionApp.auctionemail",
+    "pk": 7,
+    "fields": {
+        "auction": 11
+    }
+},
+{
+    "model": "auctionApp.auctionemail",
+    "pk": 8,
+    "fields": {
+        "auction": 12
+    }
+},
+{
+    "model": "auctionApp.auctionemail",
+    "pk": 9,
+    "fields": {
+        "auction": 13
+    }
+},
+{
+    "model": "auctionApp.auctionemail",
+    "pk": 10,
+    "fields": {
+        "auction": 14
+    }
+},
+{
+    "model": "auctionApp.auctionemail",
+    "pk": 11,
+    "fields": {
+        "auction": 15
+    }
+},
+{
+    "model": "auctionApp.auctionemail",
+    "pk": 12,
+    "fields": {
+        "auction": 16
+    }
+},
+{
+    "model": "auctionApp.auctionemail",
+    "pk": 13,
+    "fields": {
+        "auction": 17
+    }
+},
+{
+    "model": "auctionApp.bidemail",
+    "pk": 6,
+    "fields": {
+        "bid": 16
+    }
+},
+{
+    "model": "auctionApp.bidemail",
+    "pk": 7,
+    "fields": {
+        "bid": 17
+    }
+},
+{
+    "model": "auctionApp.bidemail",
+    "pk": 8,
+    "fields": {
+        "bid": 18
+    }
+},
+{
+    "model": "auctionApp.bidemail",
+    "pk": 9,
+    "fields": {
+        "bid": 19
+    }
+},
+{
+    "model": "auctionApp.bidemail",
+    "pk": 10,
+    "fields": {
+        "bid": 20
+    }
+},
+{
+    "model": "auctionApp.bidemail",
+    "pk": 11,
+    "fields": {
+        "bid": 21
+    }
+},
+{
+    "model": "auctionApp.bidemail",
+    "pk": 12,
+    "fields": {
+        "bid": 22
+    }
+},
+{
+    "model": "auctionApp.bidemail",
+    "pk": 13,
+    "fields": {
+        "bid": 23
+    }
+}
+]

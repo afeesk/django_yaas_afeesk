@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="confirmation-box">
+        <p>{{ message }}</p>
+        <div>
+            <a href="{{ prev_link }}">NO</a>
+            <form action="{{ action_link }}" method="post"> {% csrf_token %}
+                <input type="hidden" name="next1" value="{{ prev_link }}" />
+                <input type="submit" name="next2" value="YES" />
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: New Auction Created
+From: webmaster@localhost
+To: boss@boss.com
+Date: Sun, 28 Oct 2018 08:03:06 -0000
+Message-ID: <154071378639.7968.1433662366019702462@DESKTOP-D52AH1Q>
+
+Hello boss,
+
+You can update your auction here: http:/127.0.0.1:8000//auctions/seller/acer-laptop-13/
+
+
+
+Thank you
+-------------------------------------------------------------------------------

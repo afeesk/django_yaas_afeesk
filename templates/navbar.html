@@ -1,0 +1,78 @@
+{% load i18n %}
+ <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          
+          <a class="navbar-brand" href="{% url 'home' %}">YAAS Website</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+         
+          <form class="navbar-form navbar-left" role="search" action ='/s/'>
+          <div class="form-group">
+          <input type="text" class="form-control" name = 'q' placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            {% if request.session.lang %}
+            <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+            {% else %}
+            <li><a href="{% url 'home' %}">Home</a></li>
+            {% endif %}
+
+            {% if user.is_authenticated %}
+               {% if request.session.lang %}
+            
+            <li><a href="{% url 'post_auction_view' %}">{% trans "Post Auction" %}</a></li>
+            <li><a href="{% url 'seller_view' %}">{% trans "Your Auctions" %}</a></li>
+             <li><a href="{% url 'modify_view' %}">{% trans "Edit account details" %}</a></li>
+             <li><a href="{% url 'auth_logout' %}">{% trans "logout" %}</a></li>
+              {% else %}
+            <li><a href="{% url 'post_auction_view' %}">Post Auction</a></li>
+            <li><a href="{% url 'seller_view' %}">Your Auctions</a></li>
+            <li><a href="{% url 'modify_view' %}">Edit account details</a></li>
+            <li><a href="{% url 'auth_logout' %}">logout</a></li>
+               {% endif %}
+            {% else %}
+            {% if request.session.lang %}
+             <li><a href="{% url 'auth_login' %}">{% trans "login" %}</a></li>
+             <li><a href="{% url 'auth_register' %}">{% trans "Register" %}</a></li>
+             {% else %}
+             <li><a href="{% url 'auth_login' %}">login</a></li>
+             <li><a href="{% url 'auth_register' %}">Register</a></li>
+             {% endif %}  
+             {% endif %}  
+             
+             <li> <form class="navbar-form navbar-left" action='{% url "home" %}' method="post"> {% csrf_token %}
+            <select name="lang" onchange='if(this.value != 0) { this.form.submit(); }'>
+              <option value="empty">Choose Language
+            </option>
+              <option value="swedish">Swedish
+            </option>
+            <option value="english">English
+            </option> 
+    </select>
+    <!--<input type="submit" value="Submit"> -->
+
+
+</form></li>
+
+<li><form class="navbar-form navbar-left" action='{% url "home" %}' method="post"> {% csrf_token %}
+             <select name='cur' onchange='if(this.value != 0) { this.form.submit(); }'>
+             <option value="empty">Choose currency
+            </option>
+            <option value="eur">Euro
+            </option>
+            <option value="usd">USD
+            </option>
+            <option value="aud">AUD
+       </select>
+    </form></li>
+
+
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>

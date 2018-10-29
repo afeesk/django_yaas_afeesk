@@ -1,0 +1,5 @@
+Hello {{ winner }},
+
+You have won the auction: "{{ title }}". Congratulations!
+
+Thank you

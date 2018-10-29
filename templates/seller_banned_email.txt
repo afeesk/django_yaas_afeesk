@@ -1,0 +1,5 @@
+Hello {{ seller }},
+
+Your auction: "{{ title }}" has been banned.
+
+Thank you

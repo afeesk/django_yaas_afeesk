@@ -1,0 +1,30 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: New bid on your item
+From: webmaster@localhost
+To: abc@abc.com
+Date: Sun, 28 Oct 2018 08:08:46 -0000
+Message-ID: <154071412653.7968.3631850254150535021@DESKTOP-D52AH1Q>
+
+Hello abc,
+
+Your auction: "ipad" has received a new bid.
+
+Thank you
+-------------------------------------------------------------------------------
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: New bids registered
+From: webmaster@localhost
+To: naus@naus.com
+Date: Sun, 28 Oct 2018 08:08:46 -0000
+Message-ID: <154071412653.7968.13109646337013884834@DESKTOP-D52AH1Q>
+
+Hello ,
+
+The auction: "ipad" which you did bid on has received a new bid.
+
+Thank you
+-------------------------------------------------------------------------------

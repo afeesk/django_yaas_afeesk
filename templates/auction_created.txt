@@ -1,0 +1,7 @@
+Hello {{ user }},
+
+You can update your auction here: {{ web_url }}{% url "single_auction" slug %}
+
+
+
+Thank you

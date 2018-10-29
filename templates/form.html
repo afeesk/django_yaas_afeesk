@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+<div class 'col-sm-6 col-sm-offset-3' style = 'margin-top: 50px;'>	
+{% if request.session.option_form %}
+<h2> {{ confirm_message }} </h2>
+{% endif %}
+
+{% if description %}
+<h2> {{ description }} </h2>
+{% endif %}
+<form method ='POST' action=''> {% csrf_token %}
+
+{{ form.as_p }}
+<input type = 'submit' value = '{% if submit_btn %}{{ submit_btn }}{% else %}Submit{% endif %}' class = 'btn btn-default'/>
+</form>
+<div>
+{% endblock %}

@@ -1,0 +1,30 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: New bid on your item
+From: webmaster@localhost
+To: fade@fade.com
+Date: Sun, 28 Oct 2018 17:58:32 -0000
+Message-ID: <154074951254.12952.4422101508174006585@DESKTOP-D52AH1Q>
+
+Hello fade,
+
+Your auction: "beans" has received a new bid.
+
+Thank you
+-------------------------------------------------------------------------------
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: New bids registered
+From: webmaster@localhost
+To: boss@boss.com
+Date: Sun, 28 Oct 2018 17:58:32 -0000
+Message-ID: <154074951254.12952.3259816215511600513@DESKTOP-D52AH1Q>
+
+Hello ,
+
+The auction: "beans" which you did bid on has received a new bid.
+
+Thank you
+-------------------------------------------------------------------------------

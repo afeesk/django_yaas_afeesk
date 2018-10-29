@@ -1,0 +1,120 @@
+[
+{
+    "model": "accounts.userprofile",
+    "pk": 9,
+    "fields": {
+        "user": 30,
+        "language_preference": "en-us"
+    }
+},
+{
+    "model": "accounts.userprofile",
+    "pk": 10,
+    "fields": {
+        "user": 31,
+        "language_preference": "sv"
+    }
+},
+{
+    "model": "accounts.userprofile",
+    "pk": 11,
+    "fields": {
+        "user": 32,
+        "language_preference": "en-us"
+    }
+},
+{
+    "model": "accounts.userprofile",
+    "pk": 12,
+    "fields": {
+        "user": 33,
+        "language_preference": ""
+    }
+},
+{
+    "model": "accounts.userprofile",
+    "pk": 13,
+    "fields": {
+        "user": 28,
+        "language_preference": ""
+    }
+},
+{
+    "model": "accounts.userprofile",
+    "pk": 14,
+    "fields": {
+        "user": 34,
+        "language_preference": ""
+    }
+},
+{
+    "model": "accounts.emailconfirmed",
+    "pk": 20,
+    "fields": {
+        "user": 28,
+        "auction": null,
+        "activation_key": "09a9e1656c769e5e4a879f4a89c4e1c38aca8862",
+        "confirmed": false
+    }
+},
+{
+    "model": "accounts.emailconfirmed",
+    "pk": 21,
+    "fields": {
+        "user": 29,
+        "auction": null,
+        "activation_key": "",
+        "confirmed": false
+    }
+},
+{
+    "model": "accounts.emailconfirmed",
+    "pk": 22,
+    "fields": {
+        "user": 30,
+        "auction": null,
+        "activation_key": "15aec296cea0a0ca363ea3b7d5419dc168f8c1e9",
+        "confirmed": false
+    }
+},
+{
+    "model": "accounts.emailconfirmed",
+    "pk": 23,
+    "fields": {
+        "user": 31,
+        "auction": null,
+        "activation_key": "Confirmed",
+        "confirmed": true
+    }
+},
+{
+    "model": "accounts.emailconfirmed",
+    "pk": 24,
+    "fields": {
+        "user": 32,
+        "auction": null,
+        "activation_key": "b1223282ba53419d73efd6100a53f0b8f7f91ced",
+        "confirmed": false
+    }
+},
+{
+    "model": "accounts.emailconfirmed",
+    "pk": 25,
+    "fields": {
+        "user": 33,
+        "auction": null,
+        "activation_key": "ce63e28821b55922768505af624fbc1c94d9e8e1",
+        "confirmed": false
+    }
+},
+{
+    "model": "accounts.emailconfirmed",
+    "pk": 26,
+    "fields": {
+        "user": 34,
+        "auction": null,
+        "activation_key": "Confirmed",
+        "confirmed": true
+    }
+}
+]

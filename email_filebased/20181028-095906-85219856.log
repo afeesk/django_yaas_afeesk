@@ -1,0 +1,17 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Activate your email
+From: webmaster@localhost
+To: boss@boss.com
+Date: Sun, 28 Oct 2018 07:59:06 -0000
+Message-ID: <154071354657.7968.6061340371477898182@DESKTOP-D52AH1Q>
+
+Hello boss,
+
+Please activate your account here:
+
+http://127.0.0.1:8000/accounts/activate/06995b52c1c5721d8bf81dd34dcc4a50d0d639e5/
+
+Thank you
+-------------------------------------------------------------------------------

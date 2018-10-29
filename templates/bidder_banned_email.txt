@@ -1,0 +1,5 @@
+Hello ,
+
+The auction: "{{ title }}" which you did bid on has banned. We regret to inform you of this.
+
+Thank you

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load convert %}
+{% load i18n %}
+
+{% block content %}
+ {% if messages %}
+
+
+ 	{% if request.session.lang %}
+    	{% trans message %}
+     {% endif %}
+    
+
+{% endif %}
+	
+	      <!-- Example row of columns  <div class="container"> -->
+	      {% if auction %}
+	      
+	      <div class="row">
+	      	{% for items in auction %}
+	      		{% if not items.banned and not items.due %}
+	        <div class="col-sm-4">
+	          <h3>Auction title</h3> <p> {{ items.title }} </p>
+	          <h3>Description</h3> <p>{{ items.description }} </p>
+	          <h3>Start date</h3> <p>{{ items.timestamp }} </p>
+	          <h3>End date </h3> <p>{{ items.deadline }} </p>
+	          
+	          {% if items.previous_bid >= items.minimum_price and currency == "EUR" %}
+	          <h3>Current price </h3> <p> {{ items.previous_bid | convert_price:"EUR" }}  </p>	
+	          {% elif items.previous_bid < items.minimum_price and currency == "EUR" %}
+	          <h3>Current price </h3><p> {{ items.minimum_price | convert_price:"EUR" }}  </p>		              
+	          
+
+	          {% elif items.previous_bid >= items.minimum_price and currency == "USD" %}
+	          <h3>Current price </h3> <p>{{ items.previous_bid | convert_price:"USD" }}  </p>
+	          {% elif items.previous_bid < items.minimum_price and currency == "USD" %}
+	          <h3>Current price </h3> <p>{{ items.minimum_price | convert_price:"EUR" }}  </p>
+	        
+
+	          {% elif items.previous_bid >= items.minimum_price and currency == "AUD" %}
+	          <h3>Current price </h3> <p> {{ items.previous_bid | convert_price:"AUD" }}  </p>
+	          {% elif items.previous_bid < items.minimum_price and currency == "AUD" %}
+	          <h3>Current price </h3> <p> {{ items.minimum_price | convert_price:"EUR" }}  </p>
+	          {% endif %}
+	          <p><a class="btn btn-default" href='{% url "bid_on_auction" items.id %}' role="button">BID &raquo;</a></p>
+	          {% endif %}	
+	         
+</div>
+			
+
+	 {% cycle "" "" "" "" "</div> <div class='row'> <div class='col-sm-4'>" %}
+	 {% endfor %}
+
+  {% endif %}
+
+
+  
+ 
+ 
+
+
+{% endblock %}
+
+
